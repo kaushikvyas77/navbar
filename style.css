@@ -22,6 +22,7 @@ nav ul{
 nav img{
     width: 80px;
     float: left;
+    
 }
 
 li{
@@ -35,13 +36,13 @@ li{
     color: white;
     text-decoration: none;
     padding: 10px;
-    margin-top: 40px;
+
 
  }
 
 .con{
     background-color: white;
-    height: 80vh;
+    height: 66vh;
     width: 70%;
     margin: 16px auto;
     border-radius: 10px;
@@ -53,6 +54,13 @@ li{
     width: 200px;
     border-radius: 50%;
     margin-top: 107px;
+    box-shadow: 0px 0px 48px 0px;
+    border: 2px solid white;
+    
+}
+
+.ani{
+    animation: mymove 8s linear infinite;
 }
 .con h3{
     font-size: 30px;
@@ -60,9 +68,13 @@ li{
     padding: 30px;
 }
 
+nav ul{
+    margin-top: 10px;
+}
+
 
 .bottom{
-    position: -webkit-sticky;
+    position: sticky;
     height: 150px;
     color: white;
     background-color: black;
@@ -73,3 +85,21 @@ li{
     width: 100%;
     
  }
+
+ @keyframes mymove{
+ 100%{transform: rotate(360deg);}
+ }
+
+.time{
+    float: left;
+    padding-left: 10px;
+} 
+
+.icon i{
+    margin: 5px;
+}
+.icon i:hover{
+    color: gray;
+}
+
+
